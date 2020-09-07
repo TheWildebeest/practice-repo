@@ -13,6 +13,7 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
+    "mkrc": "./node_modules/.bin/mkrc",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
