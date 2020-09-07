@@ -6,6 +6,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-face {
+  font-family: "unibody";
+  src: url("./assets/fonts/unibody.woff2");
+  src: url("./assets/fonts/unibody.woff");
+  src: url("./assets/fonts/unibody.ttf");
 }
