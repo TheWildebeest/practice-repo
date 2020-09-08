@@ -1,1 +1,8 @@
 @import "../../../variables.scss";
+
+.DeparturesSection {
+  width: 60%;
+  height: 40vh;
+  border: 2px solid black;
+  box-shadow: $secondary-shadow;
+}

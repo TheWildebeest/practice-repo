@@ -4,8 +4,8 @@ import styles from "./Map.module.scss";
 class Map extends Component {
   render() {
     return (
-      <map id={styles.Map}>
-      </map>
+      <section id={styles.Map}>
+      </section>
     );
   }
 }
