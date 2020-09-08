@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/omnibus-app/static/css/main.0aabeefc.chunk.css",
+    "main.js": "/omnibus-app/static/js/main.ad14920f.chunk.js",
+    "main.js.map": "/omnibus-app/static/js/main.ad14920f.chunk.js.map",
+    "runtime-main.js": "/omnibus-app/static/js/runtime-main.d7c700bf.js",
+    "runtime-main.js.map": "/omnibus-app/static/js/runtime-main.d7c700bf.js.map",
+    "static/js/2.6b651931.chunk.js": "/omnibus-app/static/js/2.6b651931.chunk.js",
+    "static/js/2.6b651931.chunk.js.map": "/omnibus-app/static/js/2.6b651931.chunk.js.map",
+    "index.html": "/omnibus-app/index.html",
+    "precache-manifest.dd95cd59ac7da20a9d8ccca8927144cd.js": "/omnibus-app/precache-manifest.dd95cd59ac7da20a9d8ccca8927144cd.js",
+    "service-worker.js": "/omnibus-app/service-worker.js",
+    "static/css/main.0aabeefc.chunk.css.map": "/omnibus-app/static/css/main.0aabeefc.chunk.css.map",
+    "static/js/2.6b651931.chunk.js.LICENSE.txt": "/omnibus-app/static/js/2.6b651931.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/omnibus-app/static/media/background.f0073cc2.jpg",
+    "static/media/honk.mp3": "/omnibus-app/static/media/honk.8999d3ee.mp3",
+    "static/media/logo.png": "/omnibus-app/static/media/logo.7b591356.png",
+    "static/media/Map.module.scss": "/omnibus-app/static/media/unibody.cd7fb836.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d7c700bf.js",
+    "static/js/2.6b651931.chunk.js",
+    "static/css/main.0aabeefc.chunk.css",
+    "static/js/main.ad14920f.chunk.js"
+  ]
+}
