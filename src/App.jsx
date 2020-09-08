@@ -30,6 +30,19 @@ class App extends Component {
     this.setState({ latitude: Number(Math.round(lat + 'e6') + 'e-6').toString(), longitude: Number(Math.round(lng + 'e6') + 'e-6').toString() })
   }
 
+  filterData = (busStopData) => {
+    let departures = Object.entries(busStopData.departures);
+    departures = departures.map(departure => departure[1][0]);
+    return departures.map(bus => {
+      const departure = {
+        service: bus.line_name,
+        destination: bus.direction,
+        departureTime: bus.best_departure_estimate
+      };
+      return departure;
+    })
+  }
+
   fetchAtcoCode = () => {
     const key = "22da4709b682eb9ec88c9e39e2ce4cc7";
     const ID = "26bf3c4f";
@@ -41,7 +54,12 @@ class App extends Component {
         return fetch(`http://transportapi.com/v3/uk/bus/stop/${atcoCode}/live.json?app_id=${ID}&app_key=${key}&group=route&limit=1&nextbuses=no`)
           .then(response => response.json())
       })
-      .then(data => this.setState({ departures: Object.entries(data.departures) }))
+      .then(data => {
+        this.setState({ stopName: data.name });
+        return data;
+      })
+      .then(data => this.filterData(data))
+      .then(filteredData => this.setState({ departures: filteredData }))
       .catch(error => alert(error.message));
   }
 

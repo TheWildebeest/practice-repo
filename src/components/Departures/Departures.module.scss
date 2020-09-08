@@ -1,17 +1,30 @@
 @import "../../../variables.scss";
 
 .DeparturesSection {
-  width: 60%;
+  width: 1080px;
+  @media screen and (max-width: 1080px) {
+    width: 100%;
+  }
   height: 40vh;
   box-shadow: $secondary-shadow;
   background-color: black;
+
+  * {
+    font-family: unibody;
+  }
 }
 
 .DeparturesTitle {
   height: 20%;
+  font-size: 10px;
+  @media screen and (min-width: 1080px) {
+    font-size: 14px;
+  }
 }
 
 .DeparturesList {
+  height: 80%;
+  overflow: auto;
   text-align: center;
   color: orange;
 }

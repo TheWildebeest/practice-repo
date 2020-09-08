@@ -13,7 +13,7 @@ class Header extends Component {
     return (
       <header className={styles.Header}>
         <img src={logo} alt="omnibus logo" onClick={this.playHonk} />
-        <h1 data-subheading={"departures near you"}>OMNI<span className={styles.orange}>BUS </span></h1>
+        <h1 data-subheading={"departures happening near you"}>OMNI<span className={styles.orange}>BUS</span> LIVE</h1>
       </header>
     );
   }

@@ -3,6 +3,10 @@ import styles from "./Departures.module.scss";
 
 class Departures extends Component {
 
+  getListings = (data) => {
+    return null
+  }
+
   render() {
     const { stopName, departures } = this.props;
     return (

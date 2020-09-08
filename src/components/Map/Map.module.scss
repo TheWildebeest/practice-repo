@@ -1,7 +1,10 @@
 @import "../../../variables.scss";
 
 #Map {
-  width: 60%;
+  width: 1080px;
+  @media screen and (max-width: 1081px) {
+    width: 100%;
+  }
   height: 40vh;
   box-shadow: $secondary-shadow;
 }
