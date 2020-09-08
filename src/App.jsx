@@ -10,8 +10,10 @@ class App extends Component {
     return (
       <div className={styles.App} >
         <Header />
-        <Departures />
-        <Map />
+        <main className={styles.Main}>
+          <Departures />
+          <Map />
+        </main>
       </div>
     );
   }

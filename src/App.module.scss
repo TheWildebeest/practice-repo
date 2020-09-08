@@ -1,1 +1,6 @@
 @import "../variables.scss";
+
+.Main {
+  @include display_flex_column;
+  height: 90vh;
+}
