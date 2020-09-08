@@ -1,10 +1,21 @@
 import React, { Component } from "react";
 import styles from "./Departures.module.scss";
+import DepartureListing from './DepartureListing';
 
 class Departures extends Component {
 
-  getListings = (data) => {
-    return null
+  listDepartures = (departures) => {
+    return departures.map(bus => {
+      return <DepartureListing
+        service={bus.service ? bus.service : ""}
+        destination={bus.destination ? bus.destination : ""}
+        departureTime={bus.departureTime ? bus.departureTime : ""}
+      />
+    })
+  }
+
+  placeholder = () => {
+    return <h3 className={styles.Placeholder}>Live departures will show here!</h3>
   }
 
   render() {
@@ -12,13 +23,10 @@ class Departures extends Component {
     return (
       <section className={styles.DeparturesSection}>
         <div className={styles.DeparturesTitle}>
-          <h2 className={styles.stopName}>{stopName ? stopName : "Click anywhere on the map to get started"}</h2>
+          <h2 className={styles.StopName}>{stopName ? stopName : "Click anywhere on the map to get started"}</h2>
         </div>
-        <div>
-          <hgroup className={styles.DeparturesList}>
-            {/* {departures[0].line ? "Live departures!" : "Live departures will show here"} */}
-            {"Live departures will show here!"}
-          </hgroup>
+        <div className={styles.DeparturesList}>
+          {departures[0] && departures[0].service ? this.listDepartures(departures) : this.placeholder()}
         </div>
       </section>
     );

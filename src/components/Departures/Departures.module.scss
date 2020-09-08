@@ -1,6 +1,8 @@
 @import "../../../variables.scss";
 
 .DeparturesSection {
+  @include display_flex_column;
+  justify-content: space-between;
   width: 1080px;
   @media screen and (max-width: 1080px) {
     width: 100%;
@@ -16,21 +18,33 @@
 }
 
 .DeparturesTitle {
+  width: 80%;
+  @include display_flex_column;
+  margin: 0;
   height: 20%;
-  font-size: 10px;
-  @media screen and (min-width: 1080px) {
+  font-size: 12px;
+  @media screen and (min-width: 550px) {
     font-size: 14px;
   }
+}
+.StopName {
+  height: 50%;
+  text-align: center;
+  color: orange;
+  vertical-align: middle;
 }
 
 .DeparturesList {
   height: 80%;
+  width: 80%;
   overflow: auto;
-  text-align: center;
   color: orange;
+  text-align: center;
 }
 
-.stopName {
-  text-align: center;
-  color: orange;
+.Placeholder {
+  font-family: Raleway;
+  font-size: 18px;
+  margin: 10% auto;
+  color: $busgrey;
 }

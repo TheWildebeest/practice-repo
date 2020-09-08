@@ -13,14 +13,14 @@ class App extends Component {
       stopName: "",
       departures: [
         {
-          line: "",
-          direction: "",
-          expectedDepartureTime: ""
+          service: "",
+          destination: "",
+          departureTime: ""
         },
         {
-          line: "",
-          direction: "",
-          expectedDepartureTime: ""
+          service: "",
+          destination: "",
+          departureTime: ""
         },
       ]
     }

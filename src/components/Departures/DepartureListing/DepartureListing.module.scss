@@ -1,0 +1,25 @@
+@import "../../../../variables.scss";
+
+.Bus {
+  @include display_flex_row;
+  justify-content: space-apart;
+  width: 100%;
+  height: 20%;
+  font-size: 10px;
+  @media screen and (min-width: 550px) {
+    font-size: 12px;
+  }
+
+  .BusService {
+    width: 20%;
+    text-align: left;
+  }
+  .BusDestination {
+    width: 40%;
+    text-align: left;
+  }
+  .BusDepartureTime {
+    width: 20%;
+    text-align: left;
+  }
+}
