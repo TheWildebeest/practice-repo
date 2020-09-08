@@ -4,8 +4,8 @@
   @include display_flex_column;
   justify-content: space-between;
   width: 1080px;
-  @media screen and (max-width: 1080px) {
-    width: 100%;
+  @media screen and (max-width: 1082px) {
+    width: 98%;
   }
   height: 40vh;
   box-shadow: $secondary-shadow;

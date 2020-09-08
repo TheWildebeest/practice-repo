@@ -5,7 +5,7 @@
   position: relative;
   top: 0;
   left: 0;
-  height: 15vh;
+  height: 12vh;
   width: 100vw;
   background-color: $busgrey;
   box-shadow: $primary-shadow;
@@ -15,8 +15,8 @@
     top: 0;
     left: 0;
     height: 10vh;
-    margin-left: 2.5vh;
-    margin-top: 2.5vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
     @media screen and (max-width: 700px) {
       display: none;
     }

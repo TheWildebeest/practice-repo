@@ -13,7 +13,10 @@
 
   * {
     font-family: Raleway;
-    font-size: 2em;
+    @media screen and (max-width: 800px) {
+      font-size: 1.2em;
+    }
+    font-size: 1.5em;
     font-weight: bold;
     color: white;
   }
