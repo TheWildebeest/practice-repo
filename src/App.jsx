@@ -7,24 +7,30 @@ import Map from './components/Map';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { latitude: 51.489165, longitude: - 0.142499 };
+    this.state = {
+      latitude: 51.489165,
+      longitude: -0.142499,
+      atcoCode: 0
+    };
   }
 
   setLocationState = (lat, lng) => {
-    this.setState({ latitude: Number(Math.round(lat + 'e6') + 'e-6'), longitude: Number(Math.round(lat + 'e6') + 'e-6') })
+    this.setState({ latitude: Number(Math.round(lat + 'e6') + 'e-6').toString(), longitude: Number(Math.round(lng + 'e6') + 'e-6').toString() })
   }
 
-  fetchDepartures = () => {
-    const key = "7c3d3e46d0cc641a20988d30562ee5fc";
-    const ID = "401dd4f8";
-    const { lat, lng } = this.state;
-    fetch(`http://transportapi.com/v3/uk/places.json?places.json?&lon=-0.006944&type=bus_stop&app_id=401dd4f8&app_key=7c3d3e46d0cc641a20988d30562ee5fc&lat=51.534121`)
+  fetchAtcoCode = () => {
+    const key = "22da4709b682eb9ec88c9e39e2ce4cc7";
+    const ID = "26bf3c4f";
+    const { latitude, longitude } = this.state;
+    fetch(`http://transportapi.com/v3/uk/places.json?places.json?&app_id=${ID}&app_key=${key}&lat=${latitude}&lon=${longitude}&type=bus_stop`)
+      .then(response => response.json())
+      .then(data => this.setState({ atcoCode: data.member[0].atcocode }));
   }
   componentDidUpdate(prevProps, prevState) {
-    console.log(prevState.latitude, this.state.latitude);
     if ((this.state.latitude !== prevState.latitude) || (this.state.longitude !== prevState.longitude)) {
-      this.fetchDepartures();
-    }
+      this.fetchAtcoCode();
+      console.log("Bus stop updated");
+    } else return 0;
   }
 
   render() {
