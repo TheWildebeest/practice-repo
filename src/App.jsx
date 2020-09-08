@@ -25,13 +25,14 @@ class App extends Component {
     fetch(`http://transportapi.com/v3/uk/places.json?places.json?&app_id=${ID}&app_key=${key}&lat=${latitude}&lon=${longitude}&type=bus_stop`)
       .then(response => response.json())
       .then(data => this.setState({ atcoCode: data.member[0].atcocode }))
+      .then()
       .catch(error => alert(error.message));
   }
   componentDidUpdate(prevProps, prevState) {
     if ((this.state.latitude !== prevState.latitude) || (this.state.longitude !== prevState.longitude)) {
       this.fetchAtcoCode();
       console.log("Bus stop updated");
-    } else return 0;
+    } else console.log("No change");
   }
 
   render() {
