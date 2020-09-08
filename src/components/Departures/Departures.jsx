@@ -1,17 +1,24 @@
 import React, { Component } from "react";
 import styles from "./Departures.module.scss";
 import DepartureListing from './DepartureListing';
+import DeparturesHeading from './DeparturesHeading';
 
 class Departures extends Component {
 
   listDepartures = (departures) => {
-    return departures.map(bus => {
-      return <DepartureListing
-        service={bus.service ? bus.service : ""}
-        destination={bus.destination ? bus.destination : ""}
-        departureTime={bus.departureTime ? bus.departureTime : ""}
-      />
-    })
+    return (
+      <>
+        <DeparturesHeading service={"Service"} destination={"Destination"} departureTime={"Departing"} />
+        {departures.map(bus => {
+          return <DepartureListing
+            service={bus.service ? bus.service : ""}
+            destination={bus.destination ? bus.destination : ""}
+            departureTime={bus.departureTime ? bus.departureTime : ""}
+          />
+        })
+        }
+      </>
+    )
   }
 
   placeholder = () => {

@@ -1,7 +1,7 @@
 @import "../../../../variables.scss";
 
-.Bus {
-  box-sizing: border-box;
+.Heading {
+  background-color: $busgrey;
   @include display_flex_row;
   justify-content: space-apart;
   width: 100%;
@@ -10,18 +10,23 @@
   @media screen and (min-width: 550px) {
     font-size: 12px;
   }
-  border-left: 2px solid $busgrey;
-  border-right: 2px solid $busgrey;
 
-  .BusService {
+  * {
+    font-family: Raleway;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+  }
+
+  .Service {
     width: 20%;
     text-align: left;
   }
-  .BusDestination {
+  .Destination {
     width: 40%;
     text-align: left;
   }
-  .BusDepartureTime {
+  .DepartureTime {
     width: 20%;
     text-align: left;
   }
