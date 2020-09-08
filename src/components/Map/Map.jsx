@@ -3,9 +3,8 @@ import styles from "./Map.module.scss";
 import GoogleMapReact from 'google-map-react';
 
 class Map extends Component {
-  _getLocation = ({ lat, lng }) => {
-    console.log(lat, lng);
-    this.props.getBusStop();
+  _setLocationState = ({ lat, lng }) => {
+    this.props.setLocationState(lat, lng);
   }
 
   defaultLocation = {
@@ -22,7 +21,7 @@ class Map extends Component {
           defaultCenter={this.defaultLocation}
           defaultZoom={11}
           layerTypes={['TransitLayer']}
-          onClick={this._getLocation}
+          onClick={this._setLocationState}
         >
 
         </GoogleMapReact>
