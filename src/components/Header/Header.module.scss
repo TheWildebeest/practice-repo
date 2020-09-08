@@ -17,6 +17,9 @@
     height: 8vh;
     margin-left: 1vh;
     margin-top: 1vh;
+    @media screen and (max-width: 450px) {
+      display: none;
+    }
 
     &:hover {
       transform: scale(1.2);
@@ -34,9 +37,10 @@
 
     font-size: 40px;
     vertical-align: middle;
-    text-shadow: $primary-shadow;
+    text-shadow: 5px 5px 0 black;
 
     &::after {
+      text-shadow: none;
       content: attr(data-subheading);
       display: inline-block;
       position: absolute;
@@ -47,6 +51,9 @@
       left: 25%;
       right: 25%;
       top: 75%;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
     }
 
     img {
