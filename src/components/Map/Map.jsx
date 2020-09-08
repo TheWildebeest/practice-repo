@@ -3,14 +3,17 @@ import styles from "./Map.module.scss";
 import GoogleMapReact from 'google-map-react';
 
 class Map extends Component {
-
-  _getLocation = ({ lat, lng }) => console.log(lat, lng);
+  _getLocation = ({ lat, lng }) => {
+    console.log(lat, lng);
+    this.props.getBusStop();
+  }
 
   defaultLocation = {
     address: 'London',
     lat: 51.501904,
     lng: -0.115871,
   }
+
   render() {
     return (
       <section id={styles.Map}>

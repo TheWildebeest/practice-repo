@@ -5,6 +5,14 @@ import Departures from './components/Departures';
 import Map from './components/Map';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { latitude: 51.489165, longitude: - 0.142499 };
+  }
+
+  getBusStop = (lat, lng) => {
+    this.setState({ latitude: lat, longitude: lng })
+  }
 
   render() {
     return (
@@ -12,7 +20,7 @@ class App extends Component {
         <Header />
         <main className={styles.Main}>
           <Departures />
-          <Map />
+          <Map getBusStop={this.getBusStop} />
         </main>
       </div>
     );
