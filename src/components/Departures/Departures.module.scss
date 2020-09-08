@@ -4,4 +4,19 @@
   width: 60%;
   height: 40vh;
   box-shadow: $secondary-shadow;
+  background-color: black;
+}
+
+.DeparturesTitle {
+  height: 20%;
+}
+
+.DeparturesList {
+  text-align: center;
+  color: orange;
+}
+
+.stopName {
+  text-align: center;
+  color: orange;
 }
