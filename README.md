@@ -6,8 +6,7 @@ You'll need to have Git, Bash, and Yarn installed locally in order to build a lo
 
 In your terminal, run the following commands:
 
-### `git clone https://github.com/TheWildebeest/practice-repo.git`
-
+### `$   git clone https://github.com/TheWildebeest/practice-repo.git`
 ### `$   yarn start`
 ### `$   yarn build`
 ### `$   yarn start`
