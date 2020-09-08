@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/omnibus-app/static/css/main.0aabeefc.chunk.css",
-    "main.js": "/omnibus-app/static/js/main.ad14920f.chunk.js",
-    "main.js.map": "/omnibus-app/static/js/main.ad14920f.chunk.js.map",
-    "runtime-main.js": "/omnibus-app/static/js/runtime-main.d7c700bf.js",
-    "runtime-main.js.map": "/omnibus-app/static/js/runtime-main.d7c700bf.js.map",
-    "static/js/2.6b651931.chunk.js": "/omnibus-app/static/js/2.6b651931.chunk.js",
-    "static/js/2.6b651931.chunk.js.map": "/omnibus-app/static/js/2.6b651931.chunk.js.map",
-    "index.html": "/omnibus-app/index.html",
-    "precache-manifest.dd95cd59ac7da20a9d8ccca8927144cd.js": "/omnibus-app/precache-manifest.dd95cd59ac7da20a9d8ccca8927144cd.js",
-    "service-worker.js": "/omnibus-app/service-worker.js",
-    "static/css/main.0aabeefc.chunk.css.map": "/omnibus-app/static/css/main.0aabeefc.chunk.css.map",
-    "static/js/2.6b651931.chunk.js.LICENSE.txt": "/omnibus-app/static/js/2.6b651931.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/omnibus-app/static/media/background.f0073cc2.jpg",
-    "static/media/honk.mp3": "/omnibus-app/static/media/honk.8999d3ee.mp3",
-    "static/media/logo.png": "/omnibus-app/static/media/logo.7b591356.png",
-    "static/media/Map.module.scss": "/omnibus-app/static/media/unibody.cd7fb836.woff2"
+    "main.css": "/practice-repo/static/css/main.781d602f.chunk.css",
+    "main.js": "/practice-repo/static/js/main.a9b85d26.chunk.js",
+    "main.js.map": "/practice-repo/static/js/main.a9b85d26.chunk.js.map",
+    "runtime-main.js": "/practice-repo/static/js/runtime-main.9f361cc2.js",
+    "runtime-main.js.map": "/practice-repo/static/js/runtime-main.9f361cc2.js.map",
+    "static/js/2.6b651931.chunk.js": "/practice-repo/static/js/2.6b651931.chunk.js",
+    "static/js/2.6b651931.chunk.js.map": "/practice-repo/static/js/2.6b651931.chunk.js.map",
+    "index.html": "/practice-repo/index.html",
+    "precache-manifest.d2e66e25b90585ba2a137592c32cd8b9.js": "/practice-repo/precache-manifest.d2e66e25b90585ba2a137592c32cd8b9.js",
+    "service-worker.js": "/practice-repo/service-worker.js",
+    "static/css/main.781d602f.chunk.css.map": "/practice-repo/static/css/main.781d602f.chunk.css.map",
+    "static/js/2.6b651931.chunk.js.LICENSE.txt": "/practice-repo/static/js/2.6b651931.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/practice-repo/static/media/background.f0073cc2.jpg",
+    "static/media/honk.mp3": "/practice-repo/static/media/honk.8999d3ee.mp3",
+    "static/media/logo.png": "/practice-repo/static/media/logo.7b591356.png",
+    "static/media/Map.module.scss": "/practice-repo/static/media/unibody.cd7fb836.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.d7c700bf.js",
+    "static/js/runtime-main.9f361cc2.js",
     "static/js/2.6b651931.chunk.js",
-    "static/css/main.0aabeefc.chunk.css",
-    "static/js/main.ad14920f.chunk.js"
+    "static/css/main.781d602f.chunk.css",
+    "static/js/main.a9b85d26.chunk.js"
   ]
 }
