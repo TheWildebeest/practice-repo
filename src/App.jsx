@@ -47,11 +47,11 @@ class App extends Component {
     const key = "22da4709b682eb9ec88c9e39e2ce4cc7";
     const ID = "26bf3c4f";
     const { latitude, longitude } = this.state;
-    fetch(`http://transportapi.com/v3/uk/places.json?places.json?&app_id=${ID}&app_key=${key}&lat=${latitude}&lon=${longitude}&type=bus_stop`)
+    fetch(`https://transportapi.com/v3/uk/places.json?places.json?&app_id=${ID}&app_key=${key}&lat=${latitude}&lon=${longitude}&type=bus_stop`)
       .then(response => response.json())
       .then(data => data.member[0].atcocode)
       .then(atcoCode => {
-        return fetch(`http://transportapi.com/v3/uk/bus/stop/${atcoCode}/live.json?app_id=${ID}&app_key=${key}&group=route&limit=1&nextbuses=no`)
+        return fetch(`https://transportapi.com/v3/uk/bus/stop/${atcoCode}/live.json?app_id=${ID}&app_key=${key}&group=route&limit=1&nextbuses=no`)
           .then(response => response.json())
       })
       .then(data => {
